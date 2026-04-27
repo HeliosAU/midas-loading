@@ -1,12 +1,8 @@
 let filesTotal = 0;
 let filesNeeded = 0;
 
-// Lowers music volume so it's not deafening 
-document.getElementById("bg-music").volume = 0.2;
-
-// GMod Loading Screen Hooks
 function GameDetails(servername, serverurl, mapname, maxplayers, steamid, gamemode, volume, language) {
-    document.getElementById('status').innerText = "Joining " + servername + " | Map: " + mapname;
+    document.getElementById('status').innerText = "Connecting to " + servername + " | Map: " + mapname;
 }
 
 function SetFilesTotal(total) {
