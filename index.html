@@ -3,33 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Midas Command Terminal</title>
+    <title>Midas Clone Wars RP Loading</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="scanlines"></div>
-    
-    <div class="ui-panel">
-        <div class="header-box">
-            <h1 class="glitch-title">MIDAS</h1>
-            <h2 class="subtitle">CLONE WARS RP</h2>
-            <div class="aurebesh-sub">REPUBLIC COMMAND TERMINAL INITIALIZING</div>
-        </div>
+    <div class="container">
+        <h1 class="title">MIDAS CLONE WARS RP</h1>
+        <h2 class="map-name" id="mapName">Awaiting Deployment...</h2>
         
-        <div class="status-box">
-            <div class="aurebesh-bg">SYSTEM BOOT SEQUENCE</div>
-            <div id="status">Awaiting Server Handshake...</div>
-            
-            <div class="progress-container">
-                <div id="progress-fill" class="progress-bar"></div>
+        <div class="loading-box">
+            <p class="status" id="statusText">Establishing secure connection...</p>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar"></div>
             </div>
-            
-            <div class="file-counter">
-                DATA NODES: <span id="files">0 / 0</span>
-            </div>
+            <p class="file-text" id="fileText">Initializing databanks...</p>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
